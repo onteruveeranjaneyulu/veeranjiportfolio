@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "Kuncham",
+			"path": "../Kuncham"
+		},
+		{
+			"name": "Portfolio-files",
+			"path": "../Downloads/Portfolio-files1/Portfolio-files"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "Kuncham"
+	}
+}

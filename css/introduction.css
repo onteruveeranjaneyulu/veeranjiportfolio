@@ -1,0 +1,90 @@
+
+ .effect{
+    position: absolute;
+    color: #000;
+    overflow: hidden;
+    padding: 15px 10px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    /* text-transform: uppercase; */
+    color: white;
+ }
+ .effect::before{
+    position: absolute;
+    width: 100%;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.441);
+ }
+ .effect span:nth-child(1) {
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #fb8c00, #7615f4ac);
+    animation: animate1 2s linear infinite;
+ }
+ @keyframes animate1{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+ }
+ .effect span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom,  #fb8c00, #7615f4ac );
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+ }
+ @keyframes animate2{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+ }
+ .effect span:nth-child(3) {
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to left, #fb8c00, #7615f4ac);
+    animation: animate3 2s linear infinite;
+ }
+ @keyframes animate3{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+ }
+ .effect span:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top,  #fb8c00, #7615f4ac );
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+ }
+ @keyframes animate4{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+ }
